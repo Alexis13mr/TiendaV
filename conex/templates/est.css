@@ -1,0 +1,35 @@
+
+
+body{
+    background: lightgray;    
+}
+
+#log{
+    margin: auto;
+    display: block;
+}
+
+ul li{    
+    list-style: none;
+    font-size: 20px;    
+    border-style:groove;   
+}
+
+ul li a{
+    color: aliceblue;
+}
+#barra{
+    background:grey;
+    display: flex;
+    padding-right: 2%;
+    justify-content: right;
+    color: aliceblue;
+    border: 2px;
+
+}
+.cont{
+    background: blueviolet;
+    display: flex;
+    width: 60%;
+}   
+
