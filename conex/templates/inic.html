@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="conex/templates/est.css" />
+</head>
+<body>
+    <img id="log" src="media/Logo.png" alt="Logo" >
+    <div id="barra">
+        <ul>
+            <li><a href="admin/">Lista</a></li>
+        </ul>
+        <ul>
+            <li><a href="admin/">Lista</a></li>
+        </ul>
+        <ul>
+            <li><a href="admin/">Lista</a></li>
+        </ul>
+        <ul>
+            <li><a href="admin/">Lista</a></li>
+        </ul>                
+    </div>
+    
+
+
+    {% for prods in prod %}
+    <div class="cont">
+        <div class="separador">
+
+        </div>
+        <div>
+            <h1>{{prods.nomb}}</h1>
+        </div>
+        <section>{{prods.descrip}}</section>
+        <section>
+            <img class="img2" src="{{prods.imagen}}" alt="Imagen de producto">
+        </section>
+        <a href="">Comprar</a>
+     </div>
+    {% endfor %}
+
+</body>
+</html>
