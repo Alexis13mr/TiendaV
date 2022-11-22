@@ -14,3 +14,9 @@ class item(models.Model):
     tipo = models.CharField(max_length=30)
     imagen=models.ImageField(upload_to="productos",null=True)
 
+class compra(models.Model):
+    id_prod = models.ForeignKey(item, on_delete=models.CASCADE)
+    descrip=models.CharField(max_length=200, null=True)
+    fecha=models.DateField()
+    cantidad=models.SmallIntegerField()
+    valorcomp=models.IntegerField()
